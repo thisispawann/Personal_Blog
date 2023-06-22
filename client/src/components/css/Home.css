@@ -1,0 +1,11 @@
+.blogs-header {
+    display: flex;
+    flex-direction:row;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .loading{
+    text-align: center;
+    margin-top: 40px;
+  }

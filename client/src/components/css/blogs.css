@@ -1,0 +1,29 @@
+.blog-card-header {
+    width: 400px;;
+    height: 250px;;
+    margin-bottom: 18px;;
+    text-decoration: none !important;
+    color: #131313;
+}
+
+.blog-card-body {
+    border-radius: 8px;
+    margin: 60px;
+    box-shadow: rgba(0,0,0,0.24) 0 3px 8px;
+    flex-direction: column;
+    padding: 15px;
+    height: auto;
+    width: 80%;
+}
+
+.blog-card-body > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0 !important;
+}
+
+.blog-card.title {
+    font-size: 20px;
+    margin: 10px;
+}
