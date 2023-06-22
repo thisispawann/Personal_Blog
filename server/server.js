@@ -1,8 +1,10 @@
 const express = require("express");
+var bodyParser = require('body-parser');
 const cors = require("cors");
 
 const app = express();
 app.use(cors());
+app.use(bodyParser.json());
 
 const blogs = [
     {
@@ -29,6 +31,16 @@ const blogs = [
 app.get("/api/blogs", (req, res) => {
     res.status(200).json(blogs);
 });
+
+app.post("/api/postBlogs", (req, res) => {
+    // console.log("POST reached");
+
+    // console.log(req.body);
+    const blog = req.body;
+
+    blogs.push(blog);
+    res.send(`Blogs with title ${blog.title} added to the database...`)
+})
 
 app.listen(8080, () => {
     console.log("Server started on port 8080")
