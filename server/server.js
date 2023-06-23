@@ -8,12 +8,14 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const blogs = [];
+let blogs = [];
 
+// GET
 app.get("/api/blogs", (req, res) => {
     res.status(200).json(blogs);
 });
 
+// POST
 app.post("/api/postBlogs", (req, res) => {
     // console.log("POST reached");
 
@@ -31,6 +33,30 @@ app.get('/api/blogs/:id', (req, res) => { // accepts anything after the : [colon
     const foundBlog = blogs.find((blog) => blog.id === id);
     res.send(foundBlog);
 })
+
+// DELETE
+app.delete('/api/blogs/:id', (req, res) => {
+    const { id } = req.params;
+
+    blogs = blogs.filter((blog) => blog.id !== id);
+
+    res.send(`Blog with id ${id} deleted from the database.`)
+});
+
+// PATCH
+app.patch('/api/update-blogs/:id', (req, res) =>{
+    const { id } = req.params;
+    const { title, Summary, author_name } = req.body;
+
+    const blog = blogs.find((blog) => blog.id === id);
+
+    if(title) blog.title = title;
+    if(Summary) blog.Summary = Summary;
+    if(author_name) blog.author_name = author_name;
+
+    res.send(`Blog with id ${id} has been updated.`);
+})
+
 
 app.listen(8080, () => {
     console.log("Server started on port 8080")
