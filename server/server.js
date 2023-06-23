@@ -18,7 +18,6 @@ app.get("/api/blogs", (req, res) => {
 // POST
 app.post("/api/postBlogs", (req, res) => {
     // console.log("POST reached");
-
     // console.log(req.body);
     const blog = req.body;
 

@@ -8,19 +8,20 @@
 
 .blog-card-body {
     border-radius: 8px;
-    margin: 60px;
+    margin: 30px;
     box-shadow: rgba(0,0,0,0.24) 0 3px 8px;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 15px;
     height: auto;
-    width: 80%;
+    width: 200px;
+
 }
 
 .blog-card-body > p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 0 !important;
+    /* margin-bottom: 0 !important; */
 }
 
 .blog-card.title {
