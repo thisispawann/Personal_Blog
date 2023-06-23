@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -18,16 +18,17 @@ function App() {
     //   <Home/>
     // </div>
     <div className="App">
+       <Navbar/>
       <ToastContainer/>
-    <Navbar/>
-    <Router>
+    {/* <Navbar/> */}
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create" element={<Create />} />
         <Route path="/update" element={<Update />} />
         <Route path="/view" element={<View />} />
       </Routes>
-    </Router>
+ 
     </div>
   );
 }

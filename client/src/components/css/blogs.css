@@ -28,3 +28,28 @@
     font-size: 20px;
     margin: 10px;
 }
+
+.btn{
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-update {
+    background-color: green;
+}
+
+.btn-delete {
+    background-color: red;
+}
+
+.btn-view {
+    background-color: gray;
+}

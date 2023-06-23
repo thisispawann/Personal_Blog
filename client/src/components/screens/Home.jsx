@@ -27,13 +27,13 @@ const Home = () => {
     }
   return (
     <div className='blogs-header'>
-        {/* {blogs.map((blog) => (
+        {blogs.map((blog) => (
             <BlogCard  key={blog.id} data={blog} />
-        ))} */}
+        ))}
 
-{blogs ? blogs.map((blog) => (
+{/* {blogs ? blogs.map((blog) => (
             <BlogCard  key={blog.id} data={blog} />
-        )) : "" }
+        )) : "" } */}
         
 
         
