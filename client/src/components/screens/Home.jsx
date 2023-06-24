@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { getBlogData } from '../../factory/api';
+import { getBlogData, postBlogData } from '../../factory/api';
 
 import BlogCard from './BlogCard';
 import "../css/Home.css";

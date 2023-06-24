@@ -19,7 +19,7 @@ function App() {
     // </div>
     <div className="App">
        <Navbar/>
-      <ToastContainer/>
+      <ToastContainer position="top-center"/>
     {/* <Navbar/> */}
     
       <Routes>

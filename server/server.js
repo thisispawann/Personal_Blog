@@ -22,7 +22,8 @@ app.post("/api/postBlogs", (req, res) => {
     const blog = req.body;
 
     blogs.push({ ...blog, id: uuidv4() });
-    res.send(`Blogs with title ${blog.title} added to the database...`)
+    // res.send(`Blogs with title ${blog.title} added to the database...`)
+    res.send("Blog added successfully!");
 });
 
 app.get('/api/blogs/:id', (req, res) => { // accepts anything after the : [colon] and this route will hit
