@@ -1,7 +1,26 @@
 import React from "react";
+import { toast } from "react-toastify";
+import axios from 'axios';
+import { Link, useNavigate } from "react-router-dom";
 import "../css/blogs.css";
 
+
 const BlogCard = ({ data }) => {
+  const navigate = useNavigate();
+
+  const onDeleteBlog = async (id) => {
+    if(
+      window.confirm("Are you sure you want to delete the blog?")
+    ) {
+      const res = await axios.delete(`http://localhost:8080/api/blogs/${id}`);
+      if(res.status === 200) {
+        toast.success(res.data);
+        navigate("/");
+      }
+      
+    }
+    
+  }
   return (
     <div>
       <a href="{data.link}" className="blog-card-header">
@@ -10,14 +29,16 @@ const BlogCard = ({ data }) => {
             <strong>{data.title}</strong>
           </p>
           <p>{data.Summary}</p>
-          <a to={`/api/update-blogs/${data.id}`}>
+          <Link to={`/api/update-blogs/${data.id}`}>
             <button className="btn btn-update">Update</button>
-          </a>
-          <button className="btn btn-delete">Delete</button>
-          <a to={`/api/blogs/${data.id}`}>
+          </Link>
+          <Link to="/api/blogs">
+          <button className="btn btn-delete" onClick={() => onDeleteBlog(data.id)}>Delete</button>
+          </Link>
+          <Link to={`/api/blogs/${data.id}`}>
 
             <button className="btn btn-view">View</button>
-          </a>
+          </Link>
         </div>
       </a>
     </div>

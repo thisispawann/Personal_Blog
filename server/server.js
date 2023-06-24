@@ -40,7 +40,8 @@ app.delete('/api/blogs/:id', (req, res) => {
 
     blogs = blogs.filter((blog) => blog.id !== id);
 
-    res.send(`Blog with id ${id} deleted from the database.`)
+    // res.send(`Blog with id ${id} deleted from the database.`)
+    res.send("Blog deleted successfully!");
 });
 
 // PATCH
