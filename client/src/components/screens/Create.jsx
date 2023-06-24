@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import "../css/create.css";
+import axios from "axios";
 
 const initialState = {
   title: "",
@@ -17,7 +18,20 @@ const Create = () => {
 
   const navigate = useNavigate();
 
-  
+  const {id} = useParams();
+
+  useEffect(() => {
+    if (id) {
+      getUpdatedBlog(id);
+    }
+  }, [id]);
+
+  const getUpdatedBlog = async(id) => {
+    const response = await axios.get(`http://localhost:8080/api/blogs/${id}`);
+    if(response.status === 200) {
+      setState({ ...response.data[0]});
+    }
+  }
 
   // const addPostBlog = async (data) => {
   //   const response = await axios.post("http://localhost:8080/api/postBlogs");
