@@ -17,29 +17,7 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    // <>
-    //     <nav className='navbar'>
-    //     <a href="" className='navbar-title'>Personal Blog</a>
-    //     <ul>
-    //         <li>
-    //             <Link to="/">
-
-    //               <p className={`${currentTab === "Home" ? "current" : ""}`}
-    //               onClick={() => setCurrentTab("Home")}
-    //               >All Blogs</p>
-    //             </Link>
-    //         </li>
-    //         <li>
-    //             <Link to="/create">
-    //             <p className={`${currentTab === "Create" ? "current" : ""}`}
-    //             onClick={() => setCurrentTab("Create")}
-    //             >Add Blog</p>
-    //             </Link>
-    //         </li>
-    //     </ul>
-    // </nav>
-    // </>
-    <div className='navbar'>
+    <div className='navbar bg-secondary'>
       <p className='logo'>Personal Blog</p>
       <div className='navbar-right'>
         <Link to="/">

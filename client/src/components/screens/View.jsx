@@ -30,13 +30,6 @@ const View = () => {
       // setBlog({ ...res.data[0]});
     }
   }
-
-if (blog == null) {
-    return(
-        <p className="loading">Loading...</p>
-    )
-}
-
   return (
     <div>
       <div className='card w-75' style={{margin:90, display:'inline-block'}}>

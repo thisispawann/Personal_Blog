@@ -36,6 +36,8 @@ const Update = () => {
     })
     .catch(err => console.log(err))
   }
+  
+
   return (
     <>
       <h1 className="mt-4">Update Blog</h1>
