@@ -10,10 +10,10 @@ app.use(bodyParser.json());
 
 let blogs = [
     {
-        "title": "Java Spring Boot",
-        "Summary": "As we know, Spring is widely used for creating scalable applications. For web applications Spring provides Spring MVC which is a widely used module of spring which is used to create scalable web applications.",
+        "title": "Data Structures and Algorithm",
+        "Summary": "A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently. A data structure is not only used for organizing the data. It is also used for processing, retrieving, and storing data.",
         "author_name": "Pawan",
-        "id": "1234"
+        "id": "68344d88-7e36-4255-87c5-959a98b9bb7f"
     }
 ];
 

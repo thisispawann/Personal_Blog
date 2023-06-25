@@ -1,0 +1,14 @@
+.animation {
+    animation: animate-out 1s ease-out forwards;
+}
+
+@keyframes animate-out {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}

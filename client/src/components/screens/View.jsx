@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 //import { getBlogViewData } from '../../factory/api';
 import axios from 'axios';
-
+import '../css/view.css';
 
 const View = () => {
   const [blog, setBlog] = useState();
@@ -32,7 +32,7 @@ const View = () => {
   }
   return (
     <div>
-      <div className='card w-75' style={{margin:90, display:'inline-block'}}>
+      <div className='card animation w-75' style={{margin:90, display:'inline-block'}}>
         <div className='card-header'>
           <h5 style={{color:'#E11D48'}}><strong>Blog Details</strong></h5>
         </div>
