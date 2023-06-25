@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 
 const CONSTANT_URL = "http://localhost:8080/api/";
 

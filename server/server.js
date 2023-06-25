@@ -8,7 +8,14 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-let blogs = [];
+let blogs = [
+    {
+        "title": "Java Spring Boot",
+        "Summary": "As we know, Spring is widely used for creating scalable applications. For web applications Spring provides Spring MVC which is a widely used module of spring which is used to create scalable web applications.",
+        "author_name": "Pawan",
+        "id": "1234"
+    }
+];
 
 // GET
 app.get("/api/blogs", (req, res) => {

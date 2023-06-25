@@ -25,7 +25,7 @@ const BlogCard = ({ data }) => {
           </p>
           <p>{data.Summary}</p>
           <Link to={`/update/${data.id}`}>
-            <button className="btn btn-secondary btn-sm">Update</button>
+            <button className="btn btn-outline-secondary btn-sm">Update</button>
           </Link>
           <Link to="/api/blogs">
             <button

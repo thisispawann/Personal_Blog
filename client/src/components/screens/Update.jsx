@@ -82,7 +82,7 @@ const Update = () => {
             value={values.author_name}
             onChange={e => setValues({...values, author_name: e.target.value})}
           />
-
+          <br/><br />
           <input type="submit" value="Update" />
           <Link to='/'>
           <button type="button" className="btn btn-outline-secondary btn-lg btn-block" style={{width: '100%'}}>Cancel</button>
