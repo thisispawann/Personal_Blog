@@ -10,6 +10,7 @@ import Create from "./components/screens/Create.jsx";
 import Update from "./components/screens/Update";
 import View from "./components/screens/View";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (

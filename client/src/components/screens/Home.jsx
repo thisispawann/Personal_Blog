@@ -5,6 +5,7 @@ import { getBlogData, postBlogData } from '../../factory/api';
 import BlogCard from './BlogCard';
 import "../css/Home.css";
 
+
 const Home = () => {
     const [blogs, setBlogs] = useState(null);
 
@@ -29,12 +30,7 @@ const Home = () => {
     <div className='blogs-header'>
         {blogs.map((blog) => (
             <BlogCard  key={blog.id} data={blog} />
-        ))}
-
-{/* {blogs ? blogs.map((blog) => (
-            <BlogCard  key={blog.id} data={blog} />
-        )) : "" } */}
-        
+        ))}  
 
         
     </div>

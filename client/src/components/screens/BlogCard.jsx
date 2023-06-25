@@ -22,7 +22,7 @@ const BlogCard = ({ data }) => {
     
   }
   return (
-    <div>
+    <>
       <a href="{data.link}" className="blog-card-header">
         <div className="blog-card-body">
           <p className="blog-card-title" style={{ color: "#E11D48" }}>
@@ -30,18 +30,21 @@ const BlogCard = ({ data }) => {
           </p>
           <p>{data.Summary}</p>
           <Link to={`/update/${data.id}`}>
-            <button className="btn btn-update">Update</button>
+            <button className="btn btn-outline-secondary btn-sm">Update</button>
           </Link>
           <Link to="/api/blogs/">
-          <button className="btn btn-delete" onClick={() => onDeleteBlog(data.id)}>Delete</button>
+          <button className="btn btn-danger btn-sm" onClick={() => onDeleteBlog(data.id)}>Delete</button>
           </Link>
           <Link to={`/api/blogs/${data.id}`}>
 
-            <button className="btn btn-view">View</button>
+            <button className="btn btn-primary btn-sm">View</button>
           </Link>
         </div>
       </a>
-    </div>
+       
+
+    </>
+    
   );
 };
 

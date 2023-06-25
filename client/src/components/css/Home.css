@@ -1,8 +1,15 @@
 .blogs-header {
-    display: flex;
-    flex-direction:row;
-    margin: auto;
+    /* display:inline-block; */
+    /* flex-direction:column-reverse; */
+    /* margin: auto;
     margin-top: 50px;
+    height: 100rem; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap:12px;
+    margin: 48px;
+    flex-direction: row-reverse;
   }
 
   .loading{
