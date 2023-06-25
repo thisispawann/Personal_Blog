@@ -39,11 +39,11 @@ if (blog == null) {
 
   return (
     <div>
-      <div className='card w-75' style={{margin:90}}>
+      <div className='card w-75' style={{margin:90, display:'inline-block'}}>
         <div className='card-header'>
-         <strong> <p style={{color:'#E11D48'}}>Blog Details</p></strong>
+          <h5 style={{color:'#E11D48'}}><strong>Blog Details</strong></h5>
         </div>
-        <div className='container'>
+        <div className='container mt-5'>
           <strong>Title: </strong> <span>{blog && blog.title}</span> <br /><br />
           <strong>Summary: </strong> <span>{blog && blog.Summary}</span> <br /><br />
           <strong>Author Name: </strong> <span>{blog && blog.author_name}</span> <br /><br /><br />

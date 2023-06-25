@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "../css/create.css";
 import axios from "axios";
@@ -38,7 +38,7 @@ const Update = () => {
   }
   return (
     <>
-      <h1>Update Blog</h1>
+      <h1 className="mt-4">Update Blog</h1>
       <div style={{ marginTop: "60px" }}>
         <form
           style={{
@@ -49,7 +49,7 @@ const Update = () => {
           }}
           onSubmit={handleSubmit}
         >
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title"><strong>Title</strong></label>
           <input
             type="text"
             id="title"
@@ -59,7 +59,7 @@ const Update = () => {
             onChange={e => setValues({...values, title: e.target.value})}
           />
 
-          <label htmlFor="summary">Summary</label>
+          <label htmlFor="summary"><strong>Summary</strong></label>
           <textarea
             type="text"
             id="summary"
@@ -71,7 +71,7 @@ const Update = () => {
             onChange={e => setValues({...values, Summary: e.target.value})}
           />
 
-          <label htmlFor="author_name">Author Name</label>
+          <label htmlFor="author_name"><strong>Author Name</strong></label>
           <input
             type="text"
             id="author_name"
@@ -82,6 +82,9 @@ const Update = () => {
           />
 
           <input type="submit" value="Update" />
+          <Link to='/'>
+          <button type="button" className="btn btn-outline-secondary btn-lg btn-block" style={{width: '100%'}}>Cancel</button>
+          </Link>
         </form>
       </div>
     </>
