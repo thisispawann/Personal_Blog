@@ -22,12 +22,12 @@ const Navbar = () => {
       <div className='navbar-right'>
         <Link to="/">
         <p className={`${currentTab === "Home" ? "active" : ""}`}
-               onClick={() => setCurrentTab("Home")}>All Blogs</p>
+               onClick={() => setCurrentTab("Home")}>All Articles</p>
         </Link>
         <Link to="/create">
                <p className={`${currentTab === "Create" ? "active" : ""}`}
                 onClick={() => setCurrentTab("Create")}
-                >Add Blog</p>
+                >New Article</p>
                </Link>
       </div>
     </div>
