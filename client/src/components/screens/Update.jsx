@@ -60,10 +60,12 @@ const Update = () => {
           />
 
           <label htmlFor="summary">Summary</label>
-          <input
+          <textarea
             type="text"
             id="summary"
             name="Summary"
+            rows={4}
+            cols={43}
             placeholder="Enter blog summary..."
             value={values.Summary}
             onChange={e => setValues({...values, Summary: e.target.value})}

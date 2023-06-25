@@ -35,7 +35,7 @@ const BlogCard = ({ data }) => {
           <Link to="/api/blogs/">
           <button className="btn btn-danger btn-sm" onClick={() => onDeleteBlog(data.id)}>Delete</button>
           </Link>
-          <Link to={`/api/blogs/${data.id}`}>
+          <Link to={`/view/${data.id}`}>
 
             <button className="btn btn-primary btn-sm">View</button>
           </Link>

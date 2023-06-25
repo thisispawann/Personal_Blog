@@ -97,7 +97,7 @@ const Create = () => {
           }}
           onSubmit={handleSubmit}
         >
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title"><strong>Title</strong></label>
           <input
             type="text"
             id="title"
@@ -107,17 +107,19 @@ const Create = () => {
             value={title}
           />
 
-          <label htmlFor="summary">Summary</label>
-          <input
+          <label htmlFor="summary"><strong>Summary</strong></label>
+          <textarea
             type="text"
             id="summary"
             name="Summary"
+            rows={4}
+            cols={43}
             placeholder="Enter blog summary..."
             onChange={handleInputChange}
             value={Summary}
           />
 
-          <label htmlFor="author_name">Author Name</label>
+          <label htmlFor="author_name"><strong>Author Name</strong></label>
           <input
             type="text"
             id="author_name"
