@@ -40,8 +40,8 @@ const Update = () => {
 
   return (
     <>
-      <h1 className="mt-4">Update Blog</h1>
-      <div style={{ marginTop: "60px" }}>
+      <h3 className="mt-4" style={{color:'#E11D48'}}>Update Blog</h3>
+      <div>
         <form
           style={{
             margin: "auto",

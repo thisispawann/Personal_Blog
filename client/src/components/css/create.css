@@ -11,15 +11,16 @@ select {
 
 input[type="submit"] {
     width: 100%;
-    background-color: #E11D48;
+    /* background-color: #E11D48; */
+    background-color: #0d6efd;
     color: #fff;
     padding: 14px 20px;
-    margin: 8px 0;
+    /* margin: 8px 0; */
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover{
-    background-color: #bd1b3e;
+    background-color: #095cd6;
 }

@@ -86,8 +86,8 @@ const Create = () => {
   };
   return (
     <>
-      <h1 className="mt-4">Create Blog</h1>
-      <div style={{ marginTop: "60px" }}>
+      <h3 className="mt-4" style={{color:'#E11D48'}}>Create Blog</h3>
+      <div>
         <form
           style={{
             margin: "auto",

@@ -18,7 +18,9 @@ const Navbar = () => {
 
   return (
     <div className='navbar bg-secondary'>
-      <p className='logo'>Personal Blog</p>
+      <Link to="/">
+        <p className='logo'>Personal Blog</p>
+      </Link>
       <div className='navbar-right'>
         <Link to="/">
         <p className={`${currentTab === "Home" ? "active" : ""}`}

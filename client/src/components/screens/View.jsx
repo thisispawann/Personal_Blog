@@ -15,7 +15,7 @@ const View = () => {
     }
   }, [id]);
 
-  console.log(id);
+  // console.log(id);
 
   const getSingleBlog = async (id) => {
     const res = await axios.get(`http://localhost:8080/api/blogs/${id}`);

@@ -13,9 +13,8 @@ const Home = () => {
     setTimeout(() => {
       getBlogData()
         .then((res) => {
-          console.log(res);
-          // setBlogs(res);
-          console.log(res[0].title);
+          // console.log(res);
+          // console.log(res[0].title);
           setBlogs(res);
         })
         .catch((err) => {
