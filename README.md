@@ -14,8 +14,8 @@ Installation:
 
        npm install express body-parser cors uuid
 
-2.	Create a file named ‘server.js’ and put all the code into it. [easily get code from GitHub link that provided].
-3.	Run the server using the following command:
+2.	Create a file named ‘server.js’ and put all the code into it.
+3.	Run the server using the following command: cd server then
 
        npm run dev
       
